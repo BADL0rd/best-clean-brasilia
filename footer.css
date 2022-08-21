@@ -1,0 +1,48 @@
+footer{
+    border-top: 10px solid #1F5A2D;
+    background-color: #14235A;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    width: 100vw;
+}
+
+footer h3{
+    color: white;
+    font-size: 24px;
+}
+
+address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#wpp_link img{
+    user-select: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right:40px;
+    bottom: 40px;
+    background: var(--ces);
+    padding: 10px;
+    border-radius: 30px;
+    opacity: 0;
+    transition: all .3s;
+    z-index: 3;
+}
+#wpp_link.active img{
+    opacity: 1;
+    user-select: none;
+}

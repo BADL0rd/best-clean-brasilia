@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-repeat: no-repeat;
+    background-image: url("parte_cima.png");
+    background-size: 100vw 45vh;
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    position: relative;
+    left: 37vw;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: flex-end;
+}
+
+nav li{
+    display: block;
+    margin: 0 5px 0 5px;
+}
+
+header #logo{
+    position: relative;
+    width: 22vw;
+    top:-8vh;
+    left: 2vw;
+}
+
+nav .nav_button{
+    top: 2em;
+
+    background: #1F5A2D;
+    border: solid white 1.8px;
+    
+    text-align: center; 
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+nav .nav_button span a{
+    display: inline-block;
+    position: relative;
+    padding: 10px 24px; 
+}
+
+nav .nav_button::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: #020090;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    z-index: 0;
+    transition: all .8s;
+}
+
+nav .nav_button span a{
+    z-index: 1;
+    color: white;
+}
+
+nav .nav_button:hover::before {
+    width: 100%;
+}

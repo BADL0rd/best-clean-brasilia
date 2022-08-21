@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    overflow-x: hidden;
+}
 header{
     background-repeat: no-repeat;
     background-image: url("parte_cima.png");
-    background-size: 100vw 45vh;
+    background-size: 100vw 40vh;
     display: flex;
     flex-direction: row;
 }
@@ -36,7 +38,7 @@ header #logo{
 }
 
 nav .nav_button{
-    top: 2em;
+    top: 1.5em;
 
     background: #1F5A2D;
     border: solid white 1.8px;

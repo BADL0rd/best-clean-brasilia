@@ -13,29 +13,85 @@ footer{
 footer h3{
     color: white;
     font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
 }
 
+/*Address*/
 address{
+    display: flex;
+    flex-direction: row;
+}
+.addr{
+    margin: 0 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.icon{
+.address{
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 15px;
+    transition: all .3s ease-in;
+}
+.address:hover{
+    font-size: 18px;
+    text-decoration: underline white;
 }
 
+
+.address img{
+    width: 50px;
+    margin-right: 10px;
+}
+/*-----------------------*/
+
+/*Modificando telefone*/
+#tel_link{
+    display: flex;
+    flex-direction: row;
+}
+#tel_link img{
+    transform: rotateZ(-45deg);
+}
+#nums a{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    text-decoration: none;
+}
+.num p{
+    transition: all .3s ease-in;
+}
+
+#num-1{
+    margin-bottom: 10px;
+}
+#num-1:hover{
+    font-size: 18px;
+}
+#num-2:hover{
+    font-size: 18px;
+}
+abbr{
+    text-decoration: none;
+}
+
+/*Link wpp*/
 #wpp_link img{
     user-select: none;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     position: fixed;
     right:40px;
     bottom: 40px;
-    background: var(--ces);
     padding: 10px;
     border-radius: 30px;
     opacity: 0;

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/image/logo funde preenchido.png" type="image/x-icon">
+    <link rel="stylesheet" href="orcamento.css"/>
     <link rel="stylesheet" href="/styles/top.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <title>Best Clean Brasília</title>
@@ -50,7 +51,48 @@
         </nav>
     </header>
     <main>
-
+        <div id="cont">
+            <div class="container">
+                <h1>Solicite seu orçamento</h1>
+                <form action="https://formsubmit.co/yagovictorbotafogo@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/orcamentoSucesso.html">
+                    <input type="hidden" name="_subject" value="Novo orçamento - Best Clean Brasília">
+                    <div class="esquerda_form">
+                            <div id="inputs_form">
+                                <fieldset>
+                                    <label for="nome">Nome</label>
+                                    <input type="text" name="nome" id="name" placeholder="Digite seu nome*" required>
+                                </fieldset>
+                                
+                                <fieldset>
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="Informe seu email*" required>    
+                                </fieldset>
+                    
+                                <fieldset>
+                                    <label for="tel">Telefone</label>
+                                    <input type="tel" name="tel" id="tel" placeholder="Digite seu telefone*" required>
+                                </fieldset>
+                                
+                                <fieldset>
+                                    <label for="address">Endereço</label>
+                                    <input type="text" name="address" id="address" placeholder="Informe seu endereço*" required>
+                                </fieldset>
+                            </div>
+                
+                        </div>
+                        <div class="direita_form">
+                            <div class="mensagem" id="msg">
+                                <fieldset class="mensagem" id="message" style="border-style:groove;">
+                                    <legend>Deixe aqui seu comentário</legend>
+                                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" style="resize: vertical"></textarea>
+                            </fieldset>
+                        </div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
     <noscript>
         <a href="https://wa.me/5561983416666?text=Ol%C3%A1+%F0%9F%91%8B.+Gostaria+de+realizar+um+or%C3%A7amento%21+" 

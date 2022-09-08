@@ -1,0 +1,50 @@
+body{
+    background-color: white;
+}
+main{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    position: relative;
+    top:-10vh;
+    padding: 20px;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e3f6ff;
+}
+h1{
+    text-decoration: underline solid #1F5A2D;
+}
+.verde_title{
+    color: #007400;
+}
+.azul_title{
+    color: #020090;
+}
+ul{
+    list-style: none;
+}
+h2{
+    color: #0D9FBA;
+}
+p{
+    font-size: large;
+}
+#principal{
+    background-color: #eafde5;
+}
+.importante{
+    font-size: 20px;
+    color: rgb(255, 204, 64);
+}

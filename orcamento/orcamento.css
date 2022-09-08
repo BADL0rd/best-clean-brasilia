@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(240, 240, 240);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-10vh;
+    margin-bottom: 8vh;
+}
+#cont{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, green, lightgreen);
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    border: 5px solid transparent;
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+
+h1{
+    text-decoration: underline .1em solid black;
+    margin-bottom: .5em;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+fieldset{
+    border-radius: 5px;
+    border-style: hidden;
+    margin-bottom: .5em;
+}
+#message{
+    padding: 10px;
+}
+input[type=submit]{
+    width: 100%;
+    height: 2.5em;
+    background-color: #020090;;
+    color: white;
+    text-decoration: underline solid white 1px;
+    cursor: pointer;
+}
+input{
+    height: 30px;
+    width: 100%;
+}
+
+#tel, #address{
+    width: 93%;
+}
+#inputs_form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}

@@ -1,0 +1,20 @@
+body{
+    overflow: hidden;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 25%;
+    background-color: rgba(202, 255, 153, 0.726);
+    border-radius: 10px;
+    font-size: larger;
+}

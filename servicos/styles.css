@@ -1,0 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    position: relative;
+    top: -40px;
+    color: #08697a;
+}
+h2,h3{
+    color: #0D9FBA;
+}
+#servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+#servicos img{
+    border-radius: 100%;
+}
+hr{
+    border-left-width: 100vw;
+    margin: 10px;
+}

@@ -7,7 +7,7 @@ body{
 }
 header{
     background-repeat: no-repeat;
-    background-image: url("parte_cima.png");
+    background-image: url("../image/parte_cima.png");
     background-size: 100vw 40vh;
     display: flex;
     flex-direction: row;

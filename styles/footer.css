@@ -57,23 +57,33 @@ address{
     display: flex;
     flex-direction: row;
 }
-#tel_link img{
+.telefone{
     transform: rotateZ(-45deg);
+    width: 70px;
 }
 #nums a{
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 15px;
     text-decoration: none;
+}
+.num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.num img{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
 }
 .num p{
     transition: all .3s ease-in;
 }
 
-#num-1{
-    margin-bottom: 10px;
-}
 #num-1:hover{
     font-size: 18px;
 }

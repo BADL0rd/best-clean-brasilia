@@ -4,7 +4,7 @@ body{
 main{
     display: flex;
     justify-content: center;
-    background-color: transparent;
+    font-size: 1.1em;
 }
 #conteudo{
     display: flex;
@@ -21,10 +21,10 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #e3f6ff;
 }
 h1{
     text-decoration: underline solid #1F5A2D;
+    margin-bottom: .6em;
 }
 .verde_title{
     color: #007400;
@@ -33,18 +33,18 @@ h1{
     color: #020090;
 }
 ul{
-    list-style: none;
+    list-style: decimal;
+    margin-bottom: 15px;
+}
+li{
+    margin-bottom: 10px;
 }
 h2{
     color: #0D9FBA;
+    margin-top: .5em;
 }
-p{
-    font-size: large;
-}
-#principal{
-    background-color: #eafde5;
-}
+
 .importante{
-    font-size: 20px;
-    color: rgb(255, 204, 64);
+    font-size: 30px;
+    color: rgb(0, 4, 255);
 }

@@ -14,6 +14,8 @@ h1{
 }
 h2,h3{
     color: #0D9FBA;
+    margin: 10px;
+    font-size: 1.5em;
 }
 #servicos{
     display: flex;
@@ -29,4 +31,32 @@ h2,h3{
 hr{
     border-left-width: 100vw;
     margin: 10px;
+}
+
+#sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.conteudo{
+    font-size: 1.1em;
+    margin: 20px;
+}
+.conteudo div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.conteudo img{
+    width: 40%;
+    margin-right: 15px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
 }

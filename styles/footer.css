@@ -112,3 +112,8 @@ abbr{
     opacity: 1;
     user-select: none;
 }
+@media (max-width:600px){
+    address{
+        flex-direction: column;
+    }
+}

@@ -13,7 +13,7 @@ main{
     align-items: flex-start;
     width: 50%;
     position: relative;
-    top:-10vh;
+    margin-top:-10vh;
     padding: 20px;
 }
 #header{
@@ -47,4 +47,15 @@ h2{
 .importante{
     font-size: 30px;
     color: rgb(0, 4, 255);
+}
+@media (max-width:900px){
+    main{
+        font-size: 1em;
+    }
+    .importante{
+        font-size: 20px;
+    }
+    #conteudo{
+        margin-top: 0;
+    }
 }

@@ -7,7 +7,7 @@ main{
     align-items: center;
     justify-content: center;
     position: relative;
-    top:-10vh;
+    maring-top:-10vh;
     margin-bottom: 8vh;
 }
 #cont{
@@ -72,4 +72,24 @@ input{
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
+}
+
+
+@media (max-width:1105px){
+    form{
+        flex-direction: column;
+    }
+    main{
+        margin-top: 40px;
+    }
+}
+@media (max-width:900px){
+    #cont{
+        width: 90%;
+    }
+}
+@media (max-width:360px){
+    .container{
+        width: 70vw;
+    }
 }

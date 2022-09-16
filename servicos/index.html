@@ -14,8 +14,8 @@
 </head>
 <body>
     <header>
-        <a href="/index.html" class="logo">
-            <img src="/image/logo2.png" alt="Logo do Best Clean Brasília" id="logo">
+        <a href="../index.html" class="logo">
+            <img src="../image/logo2.png" alt="Logo do Best Clean Brasília" id="logo">
         </a>
         <i class='bx bx-menu header__toggle' id="header-toggle"></i>
         <nav id="nav-menu">
@@ -134,68 +134,88 @@
 
         <div id="sobre">
             <div class="conteudo" id="limpezaEstofado">
-                <h2>Limpeza de Estofados</h2>
+                <div class="information" onclick="showCont('le', 'toggle_le')">
+                    <h2 class="title">Limpeza de Estofados</h2>
+                    <i class="bx bx-down-arrow-alt" id="toggle_le"></i>
+                </div>
                 <div>
-                    <img src="../image/servicos/quadrado_Higienizacao_de_sofa.jpg" alt="">
-                    <p>
-                        O sistema BEST CLEAN permite que o estofado fique limpo, higienizado e com ótima aparência. Os métodos utilizados não causam encharcamento nem deixam resíduos de sabão, detergente ou shampoo. A secagem é rápida, não causando mau cheiro, descoloração ou qualquer outro dano ao tecido.
-                Limpeza de Estofados
-                    </p>
+                    <img src="../image/servicos/quadrado_Higienizacao_de_sofa.jpg" onclick="showCont('le')">
+                    <span id="le">
+                        <p>
+                            O sistema BEST CLEAN permite que o estofado fique limpo, higienizado e com ótima aparência. Os métodos utilizados não causam encharcamento nem deixam resíduos de sabão, detergente ou shampoo. A secagem é rápida, não causando mau cheiro, descoloração ou qualquer outro dano ao tecido.
+                        </p>
+                    </span>
                 </div>
             </div>
     
             <div class="conteudo" id="limpezaTapete">
-                <h2>Limpeza de Tapetes e Carpetes</h2>
-                    <div>
-                        <img src="../image/servicos/limpeza_ded_tapetes.png" alt="">  
-                        <span class="texto">
-                            <p>
-                                A Lavanderia Best Clean Brasília é especializada na limpeza de tapetes, nacionais e importados, independente do material e tecido. Retiramos e retornamos os tapetes já higienizados, em até 7 dias  — sempre com dia e hora marcada, para a sua maior comodidade.
-                                Todo o processo de limpeza é feito por profissionais da Best Clean Brasilia, sem terceirizados, capacitados para identificar cada necessidade e processo específico a ser realizado.
-                                Com a lavagem a seco ou com água, a Lavanderia Best Clean Brasília, ainda conta com equipamentos proficionais, para uma secagem mais rápida e uniforme, responsável pela remoção total de resíduos sem danificar o tecido.         
-                            </p>
-                            <h3>Carpetes</h3>
-                            <p>
-                                Por não haver encharcamento, devido os nossos métodos aplicados, a água não fica acumulada embaixo do carpete. Essa técnica evita a infiltração, que ocasiona o apodrecimento e mal cheiro da base do carpete, como acontece em lavagens não profissionais existentes no mercado.
-                            </p>
-                        </span> 
-                    </div>
+                <div class="information" onclick="showCont('lt', 'toggle_lt')">
+                    <h2 class="title">Limpeza de Tapetes e Carpetes</h2>
+                    <i class="bx bx-down-arrow-alt" id="toggle_lt"></i>
+                </div>
+                <div>
+                    <img src="../image/servicos/limpeza_ded_tapetes.png" onclick="showCont('lt')">  
+                    <span class="texto" id="lt">
+                        <p>
+                            Somos é especializados na limpeza de tapetes nacionais e importados, independente do material e tecido. Retiramos e retornamos os tapetes já higienizados em até 7 dias  — sempre com dia e hora marcada.
+                            Todo o processo de limpeza é feito por profissionais da Best Clean Brasília para identificar cada necessidade e o processo específico a ser realizado.
+                            Ainda contamos com equipamentos profissionais para lavagem a seco, ou com água, afim de remover resíduos totalmente e sem danificar o tecido
+                        </p>
+                        <h3>Carpetes</h3>
+                        <p>
+                            A água não fica acumulada embaixo do carpete por não haver encharcamento em nossos métodos. Desta forma evita a infiltração, que ocasiona o apodrecimento e mal cheiro da base do carpete.
+                        </p>
+                    </span> 
+                </div>
             </div>
             
             <div class="conteudo" id="limpezaInterior">
-                <h2>Limpeza de Interior de Veiculos</h2>      
+                <div class="information" onclick="showCont('li', 'toggle_li')">
+                    <h2 class="title">Limpeza de Interior de Veiculos</h2>      
+                    <i class="bx bx-down-arrow-alt" id="toggle_li"></i>
+                </div>
                 <div>
-                    <img src="../image/servicos/quadrado_limpeza_de_interior_de_veiculos.png" alt="">     
-                    <p>
-                        A sujeira no interior do veículo não é só uma questão estética. Ácaros e bactérias se proliferam e podem acarretar problemas respiratórios, além do mau cheiro, que demonstra não só falta de higiene, mas também causa desconforto aos passageiros. Somos especialistas em lavagem de estofados automotivos e preservamos toda área que não pode receber os produtos, por isso utilizamos extração por sucção que se vale do mínimo de água para que o estofamento do veículo esteja pronto para uso em poucas horas.
-                Limpeza de Interior de Veiculos
-                    </p>
+                    <img src="../image/servicos/quadrado_limpeza_de_interior_de_veiculos.png" onclick="showCont('li')">     
+                    <span id="li">
+                        <p>
+                            A sujeira no interior do veículo não é só uma questão estética. Ácaros e bactérias se proliferam e podem acarretar problemas respiratórios, além do mau cheiro, que demonstra não só falta de higiene, mas também causa desconforto aos passageiros. Somos especialistas em lavagem de estofados automotivos e preservamos toda área que não pode receber os produtos, por isso utilizamos extração por sucção que se vale do mínimo de água para que o estofamento do veículo esteja pronto para uso em poucas horas.
+                    Limpeza de Interior de Veiculos
+                        </p>
+                    </span>
                 </div>
             </div>
     
             <div class="conteudo" id="impermeabilizacao">
-                <h2>Impermeabilização de Estofados</h2>
+                <div class="information" onclick="showCont('i', 'toggle_i')">
+                    <h2 class="title">Impermeabilização de Estofados</h2>
+                    <i class="bx bx-down-arrow-alt" id="toggle_i"></i>
+                </div>
                 <div>
-                    <img src="../image/servicos/impermeabilizacao_de_estofados.png" alt="">
-                    <p>
-                        Contando com alto poder de proteção e repelência, evita a formação de manchas ocasionadas por derramamento de líquidos, envolvendo as tramas do tecido, formando um campo magnético que repele o líquido sem tirar a ventilação de suas tramas. Isso faz com que o líquido permaneça sobre a superfície do tecido e seja facilmente retirado com um papel absorvente.
-                        Além de proteger contra manchas de líquido, protege contra encardimento, pois evita a aderência do pó. O produto não altera as características originais do tecido. Por essa razão, é impossível, após a aplicação, diferenciar o tecido impermeabilizado do não tratado.
-                        Aumenta a resistência do tecido, fortalecendo as tramas, e age com um filtro solar de fator quatro, protegendo contra os raios UV e UVA, prolongando, assim, a durabilidade do tecido tratado.
-                        O produto utilizado foi testado e aprovado em mais de dezenove países, o AplitectorFTCIII tem reconhecimento de sua qualidade e segurança. Com várias premiações internacionais, o Aplitector é, incomparavelmente, o melhor impermeabilizante do mercado mundial.
-                    </p>
+                    <img src="../image/servicos/impermeabilizacao_de_estofados.png" onclick="showCont('i')">
+                    <span id="i">
+                        <p>
+                            Contando com alto poder de proteção e repelência, evita a formação de manchas ocasionadas por derramamento de líquidos, envolvendo as tramas do tecido, formando um campo magnético que repele o líquido sem tirar a ventilação de suas tramas. Isso faz com que o líquido permaneça sobre a superfície do tecido e seja facilmente retirado com um papel absorvente.
+                            Aumenta a resistência do tecido, fortalecendo as tramas, e age com um filtro solar de fator quatro, protegendo contra os raios UV e UVA, prolongando, assim, a durabilidade do tecido tratado.
+                            O produto utilizado foi testado e aprovado em mais de dezenove países, o AplitectorFTCIII tem reconhecimento de sua qualidade e segurança.
+                        </p>
+                    </span>
                 </div>
             </div>
     
             <div class="conteudo" id="limpezaCortinas">
-                <h2>Limpeza de Cortinas</h2>
+                <div class="information" onclick="showCont('lc', 'toggle_lc')">
+                    <h2 class="title">Limpeza de Cortinas</h2>
+                    <i class="bx bx-down-arrow-alt" id="toggle_lc"></i>
+                </div>
                 <div>
-    
-                    <img src="../image/servicos/quadrado_cortinas.png" alt="">
-                    <p>
-                        Lavamos Cortinas: de seda; de linho; voil; shantung; chales; bandôs; painéis; cordões; pingentes. Entregues limpas e passadas.
-                         Trabalhamos com profissionais treinados e capacitados.
-                         Retiramos e entregamos os produtos limpos e higienizados sem custo adicional, em até 7 dias .
-                    </p>
+                    <img src="../image/servicos/quadrado_cortinas.png">
+                    <span id="lc">
+                        <p >
+                            Lavamos Cortinas: de seda; de linho; voil; shantung; chales; bandôs; painéis; cordões; pingentes. Entregues limpas e passadas.
+                             Trabalhamos com profissionais treinados e capacitados.
+                             Retiramos e entregamos os produtos limpos e higienizados sem custo adicional, em até 7 dias .
+                        </p>
+                    </span>
                 </div>
             </div>
 
@@ -262,5 +282,6 @@
 
     <script src="../js/script.js"></script>
     <script src="../js/dropdown.js"></script>
+    <script src="../js/"></script>
 </body>
 </html>

@@ -21,8 +21,8 @@
 }
 .card-front,
 .card-back{
-  width: 15vw;
-  height: 15vw;
+  width: 100%;
+  height: 100%;
   border-radius: 100%;
   position: absolute;
   display: flex;
@@ -46,4 +46,26 @@
   position: relative;
   z-index: 0;
   filter: brightness(50%);
+}
+
+@media (max-width:900px){
+  .card-back p{
+    font-size: 10px;
+  }
+  .flip-card img{
+    width: 100%;
+    height: 100%;
+  }
+  .flip-card{
+    width: 100px;
+    height: 100px;
+  }
+  .flip-card-container{
+    width: 100%;
+    height: 20vh;
+  }
+  .flip-card{
+    transform: rotateY(180deg);
+  }
+
 }

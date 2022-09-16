@@ -85,13 +85,6 @@ nav .nav_button:hover::before {
 }
 
 @media (max-width: 900px){
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        overflow-x: hidden;
-    }
     header{
         height: 25vh;
         background-image: none;
@@ -137,7 +130,7 @@ nav .nav_button:hover::before {
     
     nav li{
         display: block;
-        margin: 0px 0px 10px 0px;
+        margin: 30px 0px 10px 0px;
     }
     
     .logo{
@@ -157,8 +150,8 @@ nav .nav_button:hover::before {
     nav .nav_button{
         top: 1.5em;
     
-        background: #1F5A2D;
-        border: solid white 1.8px;
+        background: #1f5a2d00;
+        border: solid white 0px;
         
         text-align: center; 
         font-family: arial, sans-serif;
@@ -172,27 +165,23 @@ nav .nav_button:hover::before {
     nav .nav_button span a{
         display: inline-block;
         position: relative;
-        padding: 10px 24px; 
+        padding: 10px; 
     }
     
     nav .nav_button::before{
         content: "";
-        width: 0%;
-        height: 100%;
-        background-color: #020090;
-        position: absolute;
-        left: 0;
-        bottom: 0px;
-        z-index: 0;
-        transition: all .8s;
+        display: none;
     }
     
     nav .nav_button span a{
         z-index: 1;
-        color: white;
+        font-size: 1.2em;
+        color: #020090;
+        transition: all .3s ease-in;
     }
-    
-    nav .nav_button:hover::before {
-        width: 100%;
+    nav .nav_button span a:hover{
+        font-size: 1.4em;
+        transition: all .3s ease-in;
     }
+
 }

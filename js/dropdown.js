@@ -11,12 +11,11 @@ const showMenu = (toggleId, navId)=>{
 }
 showMenu('header-toggle','nav-menu')
 
-/*===== ACTIVE AND REMOVE MENU =====*/
-const navLink = document.querySelectorAll('.nav__link');   
-
-function linkAction(){
-  /*Active link*/
-  navLink.forEach(n => n.classList.remove('active'));
-  this.classList.add('active');
+const showCont = (id, toggle_id) =>{
+  const element = document.getElementById(id),
+  toggle = document.getElementById(toggle_id)
+  if(window.innerWidth <= 900){
+    element.classList.toggle('show')
+    toggle.classList.toggle('bx-x')
+  }
 }
-navLink.forEach(n => n.addEventListener('click', linkAction));

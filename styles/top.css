@@ -21,8 +21,7 @@ nav{
     margin-left: 37vw;
 }
 i{
-  position: absolute;
-  top: 100000000px;
+  visibility: hidden;
 }
 nav ul{
     display: flex;

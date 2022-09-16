@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    overflow-x: hidden;
+}
 body{
     overflow-x: hidden;
     background-color: white;
@@ -18,7 +21,8 @@ nav{
     margin-left: 37vw;
 }
 i{
-  display: none;
+  position: absolute;
+  top: 100000000px;
 }
 nav ul{
     display: flex;

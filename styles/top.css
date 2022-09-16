@@ -109,6 +109,7 @@ nav .nav_button:hover::before {
         position: relative;
         top: 0vh;
         color: white;
+        visibility: visible;
     }
     
     nav{

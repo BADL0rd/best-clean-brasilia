@@ -1,3 +1,3 @@
 setTimeout(function() {
-    window.location.href = "http://127.0.0.1:5500/";
+    window.location.href = "https://badl0rd.github.io/best-clean-brasilia";
 }, 3000);

@@ -7,7 +7,6 @@ main{
     align-items: center;
     justify-content: center;
     position: relative;
-    maring-top:-10vh;
     margin-bottom: 8vh;
 }
 #cont{

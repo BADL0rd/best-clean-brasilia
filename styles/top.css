@@ -10,10 +10,10 @@ body{
     background-color: white;
 }
 header{
-    height: 40vh;
+    height: 45vh;
     background-repeat: no-repeat;
     background-image: url("../image/parte_cima.png");
-    background-size: 100vw 40vh;
+    background-size: 100vw 45vh;
     display: flex;
     flex-direction: row;
 }

@@ -6,112 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image/logo funde preenchido.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="servicos.css">
     <link rel="stylesheet" href="styles/top.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/carrosel.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <title>Best Clean Brasília</title>
 </head>
 <body>
     <header>
-        <a href="#" class="logo">
-            <img src="image/logo2.png" alt="Logo do Best Clean Brasília" id="logo">
-        </a>
-        <i class='bx bx-menu header__toggle' id="header-toggle"></i>
-        <nav id="nav-menu">
-            <ul>
-                <li>
-                    <button class="nav_button">
-                        <span>
-                            <a href="#">
-                                Página inicial
-                            </a>
-                        </span>
-                    </button>
-                </li>
-                <li>
-                    <button class="nav_button">
-                        <span>
-                            <a href="servicos/">Serviços</a>
-                        </span>
-                    </button>
-                </li>
-                <li>
-                    <button class="nav_button">
-                        <span>
-                            <a href="orcamento/">Orçamento</a>
-                        </span>
-                    </button>
-                </li>
-            </ul>
-        </nav>
+        <div class="rect">
+            
+        </div>
+        <div id="top">
+            <div class="flex">
+                <a href="#" class="logo">
+                    <img src="image/logo funde preenchido.png" alt="Logo do Best Clean Brasília" id="logo">
+                </a>
+                <nav id="nav-menu">
+                    <ul>
+                        <li>
+                            <button class="nav_button">
+                                <span>
+                                    <a href="#">
+                                        Página inicial
+                                    </a>
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="nav_button">
+                                <span>
+                                    <a href="">Serviços</a>
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="nav_button">
+                                <span>
+                                    <a href="">Mídias sociais</a>
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
     </header>
     <main>
-        <div id="cont_1">
-            <img src="image/Big_Sofa.jpg" alt="">
-            <p>
-                A BEST CLEAN é uma empresa que atua no mercado a mais de 12 (doze) anos, procurando sempre trazer conforto e qualidade para seus clientes.
-            </p>
-        </div>
-        <hr>
-        <div id="cont_2">
-            <p>
-                Especializada em limpeza de estofados, carpetes, tapetes, colchões, cortinas e interiores de veiculos. Com pessoal qualificado e produtos de primeira qualidade para a realização dos serviços.
-            </p>
-            <img src="image/image.jpeg" alt="">
-        </div>
-    </main>
-    <a href="https://wa.me/5561983416666?text=Ol%C3%A1+%F0%9F%91%8B.+Gostaria+de+realizar+um+or%C3%A7amento%21+" 
-    id="wpp_link" target="_blank" class="active">
-        <img src="image/whatsapp.png" alt="link para whatsapp"/>
-    </a>
-    <footer>
-        <address>
-            <div class="addr right_addr">
-                <h3>Nossos contatos</h3>
-                <div id="tel_container">
-                    <span 
-                    id="tel_link" target="_blank" class="address tel">
-                        <abbr title="Ligue para nós">
-                            <img src="image/tel.svg" class="telefone">
-                        </abbr>
-                        <div id="nums">
-                            <a href="tel:(61)98341-6666" class="num" target="_blank">
-                                <p id="num-1"><abbr title="Clique para ligar">(61)98341-6666</abbr></p>
-                                <img src="image/whatsapp.png" alt="">
-                            </a>
-                            <a href="tel:(61)3264-6666" class="num" target="_blank">
-                                <p id="num-2"><abbr title="Clique para ligar">(61)3264-6666</abbr></p>
-                                <img src="image/whatsapp.png" alt="">
-                            </a>
-                        </div>
+        <img src="image/dog.jpeg" alt="" id="first_img">
+        <h1>Nossos serviços</h1>
+        
+        <div id="sobre">
+            <div class="conteudo" id="limpezaEstofado">
+                <div class="information" onclick="showCont('le', 'toggle_le')">
+                    <h2 class="title">Limpeza de Estofados</h2>
+                    <i class="bx bx-down-arrow-alt" id="toggle_le"></i>
+                </div>
+                <div>
+                    <img src="../image/servicos/quadrado_Higienizacao_de_sofa.jpg" onclick="showCont('le')">
+                    <span id="le">
+                        <p>
+                            Com o uso rotineiro, os estofados da casa costumam acumular sujeira, poeira, bactérias e germes, sendo necessária uma higienização de qualidade. Nossos métodos permitem que o estofado fique limpo, higienizado e com ótima aparência, a secagem é rápida e não causa mau cheiro, descoloração ou qualquer outro dano ao tecido. Sendo ideal para famílias que sentem a necessidade de praticidade e facilidade.
+                        </p>
                     </span>
                 </div>
             </div>
-
-            <div class="addr left_addr">
-                <div id="insta_container">
-                    <a href="https://www.instagram.com/bestcleanbrasilia" 
-                    class="address insta" id="insta_link" target="_blank">
     
-                        <img src="image/instagram.svg" alt="Logo instagram" id="logo_insta" />
-                        <p>@bestcleanbrasilia</p>
-    
-                    </a>
+            <div class="conteudo" id="limpezaTapete">
+                <div class="information" onclick="showCont('lt', 'toggle_lt')">
+                    <h2 class="title">Limpeza de Tapetes e Carpetes</h2>
+                    <i class="bx bx-down-arrow-alt" id="toggle_lt"></i>
                 </div>
-                
-                <div id="gmail_container">
-                    <a href="" 
-                    class="address gmail" id="gmail_link" target="_blank">
-    
-                        <img src="image/gmail-logo.svg" alt="Logo Gmail">
-                        <p>bestcleanbrasilia@gmail.com</p>
-    
-                    </a>
-    
+                <div>
+                    <img src="../image/servicos/limpeza_ded_tapetes.png" onclick="showCont('lt')">  
+                    <span class="texto" id="lt">
+                        <p>
+                            Sabemos que, onde se tem tapetes e carpetes, a higienização é essencial, independente do fluxo do local, já que acumulam-se muita poeira e resíduos que ficam nos sapatos e no chão. Pensando na facilidade e praticidade do cliente, retiramos e retornamos os tapetes já higienizados em até 7 dias — sempre com dia e hora marcada. Ainda contamos com equipamentos profissionais para lavagem a seco, ou com água, afim de remover resíduos totalmente e sem danificar o tecido.
+                        </p>
+                    </span> 
                 </div>
             </div>
-        </address>
-    </footer>
-    <script src="js/dropdown.js"></script>
+            
+            <div class="conteudo" id="limpezaInterior">
+                <div class="information" onclick="showCont('li', 'toggle_li')">
+                    <h2 class="title">Limpeza de Interior de Veiculos</h2>      
+                    <i class="bx bx-down-arrow-alt" id="toggle_li"></i>
+                </div>
+                <div>
+                    <img src="../image/servicos/quadrado_limpeza_de_interior_de_veiculos.png" onclick="showCont('li')">     
+                    <span id="li">
+                        <p>
+                            A sujeira no interior do veículo não é só uma questão estética. Ácaros e bactérias se proliferam e podem acarretar problemas respiratórios, além do mau cheiro, que demonstra não só falta de higiene, mas também causa desconforto aos passageiros. Somos especialistas em lavagem de estofados automotivos e preservamos toda área que não pode receber os produtos, por isso utilizamos extração por sucção que se vale do mínimo de água para que o estofamento do veículo esteja pronto para uso em poucas horas.
+                    Limpeza de Interior de Veiculos
+                        </p>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="conteudo" id="impermeabilizacao">
+                <div class="information" onclick="showCont('i', 'toggle_i')">
+                    <h2 class="title">Impermeabilização de Estofados</h2>
+                    <i class="bx bx-down-arrow-alt" id="toggle_i"></i>
+                </div>
+                <div>
+                    <img src="../image/servicos/impermeabilizacao_de_estofados.png" onclick="showCont('i')">
+                    <span id="i">
+                        <p>
+                            Contando com alto poder de proteção e repelência, evita a formação de manchas ocasionadas por derramamento de líquidos, envolvendo as tramas do tecido, formando um campo magnético que repele o líquido sem tirar a ventilação de suas tramas. Isso faz com que o líquido permaneça sobre a superfície do tecido e seja facilmente retirado com um papel absorvente.
+                            Aumenta a resistência do tecido, fortalecendo as tramas, e age com um filtro solar de fator quatro, protegendo contra os raios UV e UVA, prolongando, assim, a durabilidade do tecido tratado.
+                            O produto utilizado foi testado e aprovado em mais de dezenove países, o AplitectorFTCIII tem reconhecimento de sua qualidade e segurança.
+                        </p>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="conteudo" id="limpezaCortinas">
+                <div class="information" onclick="showCont('lc', 'toggle_lc')">
+                    <h2 class="title">Limpeza de Cortinas</h2>
+                    <i class="bx bx-down-arrow-alt" id="toggle_lc"></i>
+                </div>
+                <div>
+                    <img src="../image/servicos/quadrado_cortinas.png">
+                    <span id="lc">
+                        <p >
+                            Lavamos Cortinas: de seda; de linho; voil; shantung; chales; bandôs; painéis; cordões; pingentes. Entregues limpas e passadas.
+                             Trabalhamos com profissionais treinados e capacitados.
+                             Retiramos e entregamos os produtos limpos e higienizados sem custo adicional, em até 7 dias .
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

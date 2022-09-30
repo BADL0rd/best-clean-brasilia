@@ -1,28 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
+#top, #logo, header address{
+    position: relative;
+    z-index: 2;
 }
-html{
-    overflow-x: hidden;
-}
-body{
-    overflow-x: hidden;
+.rect{
+    position: absolute;
     background-color: white;
+    z-index: 1;
+    width: 100vw;
+    height: 100px;
+    border-bottom: #14235A 30px solid;
+    top: 0;
 }
-header{
-    height: 45vh;
-    background-repeat: no-repeat;
-    background-image: url("../image/parte_cima.png");
-    background-size: 100vw 45vh;
+.flex{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
+#logo{
+    width: 200px;
+    margin-left: 30px;
+    margin-top: -50px;
+}
+
+
 nav{
     position: relative;
     margin-left: 37vw;
-}
-i{
-  visibility: hidden;
+    margin-right: 50px;
+    margin-top: 10px;
 }
 nav ul{
     display: flex;
@@ -30,28 +35,15 @@ nav ul{
     list-style: none;
     align-items: flex-end;
 }
-
 nav li{
     display: block;
     margin: 0 5px 0 5px;
 }
-
-.logo{
-    position: relative;
-    margin-left: 2vw;
-    margin-top: -8vh;
-
-}
-header #logo{
-    position: relative;
-    width: 22vw;
-}
-
 nav .nav_button{
     top: 1.5em;
 
-    background: #1F5A2D;
-    border: solid white 1.8px;
+    background: #ffffff;
+    border: none;
     
     text-align: center; 
     font-family: arial, sans-serif;
@@ -61,134 +53,18 @@ nav .nav_button{
     overflow: hidden;
     position: relative;
 }
-
+nav .nav_button:hover{
+    background-color: #14235A;
+    border-radius: 10px;
+}
+nav .nav_button span a:hover{
+    color: white;
+}
 nav .nav_button span a{
+    color: #14235A;
     display: inline-block;
     position: relative;
     padding: 10px 24px; 
 }
 
-nav .nav_button::before{
-    content: "";
-    width: 0%;
-    height: 100%;
-    background-color: #020090;
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    z-index: 0;
-    transition: all .8s;
-}
 
-nav .nav_button span a{
-    z-index: 1;
-    color: white;
-}
-
-nav .nav_button:hover::before {
-    width: 100%;
-}
-
-@media (max-width: 900px){
-    header{
-        height: 25vh;
-        background-image: none;
-        border-bottom: 10px solid #1F5A2D;
-        background-color: #14235A;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100vw;
-    }
-    
-    i{
-        display: inline;
-        font-size: 2.5rem;
-        cursor: pointer;
-        margin: 10px 10px 0 0 ;
-        position: relative;
-        top: 0vh;
-        color: white;
-        visibility: visible;
-    }
-    
-    nav{
-        position: fixed;
-        top: 0%;
-        left: -100%;
-        background-color: rgb(225, 226, 226);
-        width: 60%;
-        height: 100vh;
-        padding: 2rem 0;
-        z-index: 999999;
-        transition: .5s;
-        overflow: auto;
-        display: flex;
-    }
-    
-    nav ul{
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        align-items: flex-start;
-        margin-left: 15%;
-    }
-    
-    nav li{
-        display: block;
-        margin: 30px 0px 10px 0px;
-    }
-    
-    .logo{
-        position: relative;
-        margin-left: 5vw;
-        margin-top: 2vh;
-    }
-    
-    .show{
-        left: -40%;
-    }
-    
-    header #logo{
-        width: 30vw;
-    }
-    
-    nav .nav_button{
-        top: 1.5em;
-    
-        background: #1f5a2d00;
-        border: solid white 0px;
-        
-        text-align: center; 
-        font-family: arial, sans-serif;
-        font-weight: bold;
-        font-size: 12px;
-        
-        overflow: hidden;
-        position: relative;
-    }
-    
-    nav .nav_button span a{
-        display: inline-block;
-        position: relative;
-        padding: 10px; 
-    }
-    
-    nav .nav_button::before{
-        content: "";
-        display: none;
-    }
-    
-    nav .nav_button span a{
-        z-index: 1;
-        font-size: 1.2em;
-        color: #020090;
-        transition: all .3s ease-in;
-    }
-    nav .nav_button span a:hover{
-        font-size: 1.4em;
-        transition: all .3s ease-in;
-    }
-
-}
